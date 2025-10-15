@@ -18,6 +18,10 @@ header>img{
     margin-bottom: 2em;
 }
 
+main>ul {
+    line-height: 2em;
+}
+
 /* CSS for everything under the Documents section */
 section#documents_main>h2 { 
     clear: left;
