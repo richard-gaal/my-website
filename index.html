@@ -10,29 +10,30 @@
 </head>
 
 <body>
-    <!--The header tag only contains the the HTML for the very top of my website-->
+    <!--The header tag contains everything that is above and to the right of the picture-->
     <header>
         <h1>Introduction to Rotaries and the Mazda RX-8!</h1>
         <img src="images/My_Car1.jpg.jpeg" alt="A picture of my Silver 2004 Mazda RX-8 in the Olympic College parking lot at night"/> <!-- Removed the absolute pixel width that was previously in this tag!-->
+        <p>Welcome to my (Richard Gaal's) website! It's dedicated to rotary engines and the Mazda RX-8. My goal is for this to be a "one stop shop" 
+            for information about the RX-8. Things I plan to host here include:</p>
+        <ul>
+            <li>A brief description of rotary engines and how they compare to normal piston engines.</li>
+            <li>The rotary-specific things you have to keep in mind to keep the engine healthy</li>
+            <li>How to perform basic maintenance and some (easyish) longevity modifications</li>
+            <li>Accepting that no matter what you do with the car, the engine will eventually need to be replaced</li>
+        </ul>
+        <p id="header_image_caption"> Here's my 2004 Mazda RX-8!</p>
     </header>
 
     <!--Main for this page is going to be 95% of the content. Since the page right now is just explaining what I plan to do with the website, I don't have
         a big need to subdivide the page into separate sections quite yet.-->
     <main>
-        <!-- Move everything above section ID documents main into header? Since its currently flowing to the right of the picture anyways-->
-        <p>Welcome to my (Richard Gaal's) website! It's dedicated to rotary engines and the Mazda RX-8. My goal is for this to be a "one stop shop" 
-            for information about the RX-8. Things I plan to host here include:</p>
-        <ul>
-            <li>A brief description of rotar engines and how they compare to normal piston engines.</li>
-            <li>The rotary-specific things you have to keep in mind to keep the engine healthy</li>
-            <li>How to perform basic maintenance and some (easyish) longevity modifications</li>
-        </ul>
     <section id="documents_main">
         <h2>Documents</h2>
         <!--I'm aware we should TRY to avoid linking to outside websites to prevent link rot, but I have it linked because I'm not sure how to link a download in HTML yet. 
             My eventual plan is to have that link be a download (or a link to a subpage of download links!) however for now the external website will have to do.-->
         <p>While you would ideally have a physical owner's manual, these cars are over 20 years old at this point and there's a chance 
-            that the original manual your car came with is loooong gone at this point. <a href="https://rotaryheads.com/PDF/RX8/">Here</a> is a place you can find a 
+            that the original manual your car came with is <em>loooong</em> gone at this point. <a href="https://rotaryheads.com/PDF/RX8/">Here</a> is a place you can find a 
             digital copy of the owner's manual, as well as some other useful documents.</p>
     </section>
     </main>
