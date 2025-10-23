@@ -18,6 +18,9 @@ header>img{
     width: 25em;
     margin-right: 2em;
     margin-bottom: 0.5em;
+    border-top: dotted #008000;
+    border-bottom: solid #fa8072;
+    border-left-color: transparent;
 }
 
 header>ul {
@@ -44,4 +47,5 @@ section#documents_main a:hover {
 /* CSS for the footer */
 footer {
     font-size: 0.75em;
+    border-top: solid 2px;
 }
