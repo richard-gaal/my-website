@@ -1,6 +1,6 @@
  :root{
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(78, 74, 74);
+    color:#4e4a4a;
 }
 
 /* All of my type selectors */
@@ -11,16 +11,63 @@ h1, h2, h3 {
 }
 
 
-/* CSS for the image at the top of the page */
+
+/* CSS for the navigation */
+nav>h2 {
+    float: left;
+}
+
+.navi {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+nav a:link {
+    color: #484545;
+    text-decoration-line: none;
+}
+
+nav a:visited {
+    color: #484545;
+    text-decoration-line: none;
+}
+
+nav a:active {
+    color: #000000;
+    text-decoration-line: none;
+}
+
+nav a:hover {
+    color: #000000;
+    text-decoration-line: none;
+}
+
+nav {
+    border-bottom: solid #000000;
+    width: 1985px;
+    height: 3.5em;
+}
+
+/* CSS for the header */
 
 header>img{ 
     float: left;
     width: 25em;
     margin-right: 2em;
     margin-bottom: 0.5em;
-    border-top: dotted #008000;
-    border-bottom: solid #fa8072;
-    border-left-color: transparent;
+    border-top: dotted #008000 3em;
+    border-bottom: solid #fa8072 25px;
+    border-left: groove 10px;
+    border-right: ridge 20px;
+}
+
+header>h1 {
+    clear: both;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border: dotted;
 }
 
 header>ul {
