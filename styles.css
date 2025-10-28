@@ -13,42 +13,39 @@ h1, h2, h3 {
 
 
 /* CSS for the navigation */
-nav>h2 {
+
+#nav_menu {
+    margin: auto;
+    padding-bottom: 2em;
+    width: 600px;
+}
+#nav_menu ul {
+    list-style-type: none;
+}
+
+#nav_menu ul li {
     float: left;
 }
 
-.navi {
-    margin-left: 20%;
-    margin-right: 20%;
+#nav_menu ul li a {
     text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #9d9d9d;
+    color: #ffffff;
+    font-weight: bold;
+    border-right: 2px solid #ffffff;
 }
 
-nav a:link {
-    color: #484545;
-    text-decoration-line: none;
+#nav_menu ul li a.lastitem {
+    border-right: none;
 }
 
-nav a:visited {
-    color: #484545;
-    text-decoration-line: none;
+#nav_menu ul li a:hover {
+    background-color:#4e4a4a;
 }
-
-nav a:active {
-    color: #000000;
-    text-decoration-line: none;
-}
-
-nav a:hover {
-    color: #000000;
-    text-decoration-line: none;
-}
-
-nav {
-    border-bottom: solid #000000;
-    width: 1985px;
-    height: 3.5em;
-}
-
 /* CSS for the header */
 
 header>img{ 

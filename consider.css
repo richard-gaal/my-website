@@ -20,43 +20,33 @@ body {
 }
 
 /* CSS for the navigation */
-nav>h2 {
+#nav_menu ul {
+    list-style-type: none;
+}
+
+#nav_menu ul li {
     float: left;
 }
 
-.navi {
-    margin-left: 20%;
-    margin-right: 15%;
+#nav_menu ul li a {
     text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #0000ff;
+    color: #ffffff;
+    font-weight: bold;
+    border-right: 2px solid #ffffff;
 }
 
-nav a:link {
-    color: #484545;
-    text-decoration-line: none;
+#nav_menu ul li a.lastitem {
+    border-right: none;
 }
 
-nav a:visited {
-    color: #484545;
-    text-decoration-line: none;
+#nav_menu ul li a.current {
+    color: #ffff00;
 }
-
-nav a:active {
-    color: #000000;
-    text-decoration-line: none;
-}
-
-nav a:hover {
-    color: #000000;
-    text-decoration-line: none;
-}
-
-nav {
-    border-bottom: solid #000000;
-    width: 1985;
-    height: 3.5em;
-}
-
-
 
 /* CSS for the header */
 header {
