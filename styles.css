@@ -10,6 +10,11 @@ h1, h2, h3 {
     color:rgb(0,0,0);
 }
 
+body {
+    width: 70%;
+    margin: auto;
+    padding: 1em;
+}
 
 
 /* CSS for the navigation */
@@ -17,20 +22,21 @@ h1, h2, h3 {
 #nav_menu {
     margin: auto;
     padding-bottom: 2em;
-    width: 600px;
+    width: 100%;
 }
 #nav_menu ul {
     list-style-type: none;
+    padding: 0;
 }
 
 #nav_menu ul li {
     float: left;
+    width: 33%;
 }
 
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    width: 175px;
     padding: 1em 0;
     text-decoration: none;
     background-color: #9d9d9d;
@@ -46,17 +52,15 @@ h1, h2, h3 {
 #nav_menu ul li a:hover {
     background-color:#4e4a4a;
 }
+
 /* CSS for the header */
 
 header>img{ 
     float: left;
-    width: 25em;
+    width: 25%;
+    min-width: 150px;
     margin-right: 2em;
     margin-bottom: 0.5em;
-    border-top: dotted #008000 3em;
-    border-bottom: solid #fa8072 25px;
-    border-left: groove 10px;
-    border-right: ridge 20px;
 }
 
 header>h1 {
@@ -92,4 +96,22 @@ section#documents_main a:hover {
 footer {
     font-size: 0.75em;
     border-top: solid 2px;
+}
+
+/* Responsive web design! */
+
+@media only screen and (max-width: 630px) {
+    #nav_menu ul li {
+        float: none;
+        width: 100%;
+    }
+
+    #nav_menu ul li a {
+        border-right: none;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    #nav_menu ul li a.lastitem {
+        border-bottom: none;
+    }
 }
