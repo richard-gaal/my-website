@@ -8,7 +8,7 @@
     <title>Information about Mazda RX-8s!</title>
     <link rel="stylesheet" href="styles.css ">
 </head>
-
+<br id="to_top"> 
 <body>
     <!--Navigation bars at the top of the website -->
     <nav id="nav_menu">
@@ -18,10 +18,14 @@
             <li><a href="consider.html">Things to Consider</a></li>
         </ul>
     </nav>
-    <!--The header tag contains everything that is above and to the right of the picture-->
+    <!--Header tag is everything above the documents section-->
     <header>
         <h1>Introduction to Rotaries and the Mazda RX-8!</h1>
-        <img src="images/My_Car1.jpg.jpeg" alt="A picture of my Silver 2004 Mazda RX-8 in the Olympic College parking lot at night"/> <!-- Removed the absolute pixel width that was previously in this tag!-->
+        <!--Figure is the image and caption for the image-->
+        <figure>
+                <img src="images/My_Car1.jpg.jpeg" alt="A picture of my Silver 2004 Mazda RX-8 in the Olympic College parking lot at night"/>
+                <figcaption>This is my 2004 Mazda RX-8!</figcaption>
+        </figure>
         <p>Welcome to my (Richard Gaal's) website! It's dedicated to rotary engines and the Mazda RX-8. My goal is for this to be a "one stop shop" 
             for information about the RX-8. Things I plan to host here include:</p>
         <ul>
@@ -30,23 +34,45 @@
             <li>How to perform basic maintenance and some (easyish) longevity modifications</li>
             <li>Accepting that no matter what you do with the car, the engine will eventually need to be replaced</li>
         </ul>
-        <p id="header_image_caption"> Here's my 2004 Mazda RX-8!</p>
     </header>
 
     <!--Main for this page is going to be 95% of the content. Since the page right now is just explaining what I plan to do with the website, I don't have
         a big need to subdivide the page into separate sections quite yet.-->
     <main>
-    <section id="documents_main">
-        <h2>Documents</h2>
-        <!--I'm aware we should TRY to avoid linking to outside websites to prevent link rot, but I have it linked because I'm not sure how to link a download in HTML yet. 
-            My eventual plan is to have that link be a download (or a link to a subpage of download links!) however for now the external website will have to do.-->
-        <p>While you would ideally have a physical owner's manual, these cars are over 20 years old at this point and there's a chance 
-            that the original manual your car came with is <em>loooong</em> gone at this point. <a href="https://rotaryheads.com/PDF/RX8/" target="_blank">Here</a> is a place you can find a 
-            digital copy of the owner's manual, as well as some other useful documents.</p>
-    </section>
+        <section id="history">
+            <h2>A Brief History of the RX-8</h2>
+            <p>While Mazda had used a rotary engine decades before the RX-8 entered production, the RX-8 specifically started development with the RX-01 concept car,
+                unveiled by Mazda in the 1995 Tokyo Motor Show, <sup><a href="#ref_1" class="references">[1]</a></sup> featuring 
+                an early version of the 13B-MSP engine <sup><a href="#ref_2" class="references">[2]</a></sup> that would later evolve into the Renesis engine used in the RX-8. </p>
+
+            <p> The multi side port (or MSP for short) engine would differ from previous Mazda rotary engines in one significant manner (elaborated upon 
+                <a href="howitworks.html">here)</a>, and while the engine did have its perks, it is also the root of the reliability issues that the RX-8 is known for.</p>
+
+            <p> Compared to its predecessor the FD RX-7, the RX-8 was designed to be more of a grand tourer than a stripped-down race car. As such, it weighs ~300 lbs
+                more and makes ~45 hp less than its top specced older sibling. This power difference comes from the fact Mazda went away from the problematic sequential turbos of the FD
+                and instead opted to make the engine naturally aspirated. The switch back to NA from the FD RX-7 was because Mazda had to adjust the locations of the exhaust ports
+                (again elaborated upon more <a href="howitworks.html">here)</a> and adding forced induction would've made the car more unreliable than it already is.</p>
+            <p> The RX-8 ended development in 2012...
+
+            </p>
+        </section>
+        <section id="documents">
+            <h2>Documents</h2>
+            <p>While you would ideally have a physical owner's manual, these cars are over 20 years old at this point and there's a chance 
+                that the original manual your car came with is <em>loooong</em> gone at this point. <a href="https://rotaryheads.com/PDF/RX8/" target="_blank">Here</a> is a place you can find a 
+                digital copy of the owner's manual, as well as some other useful documents.</p>
+        </section>
+        <section id="references">
+            <h2>References:</h2>
+            <ul>
+                <li><a href="https://www.tokyo-motorshow.com/en/history/31.html" id="ref_1"> [1] https://www.tokyo-motorshow.com/en/history/31.html</a></li>
+                <li><a href="https://www.mazdaofchicagoland.com/mazda-rotary-lifestyle/" id="ref_2">[2] https://www.mazdaofchicagoland.com/mazda-rotary-lifestyle/</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>&copy; Richard Gaal 2025</p>
+        <li><a href="#to_top" class="references">Back to Top</a></li>
     </footer>
 </body>
 
