@@ -31,7 +31,7 @@ h1, h2, h3 {
 }
 
 .pro .first_reason {
-    padding-top: 0;
+    padding-top: 1em;
 }
 
 li.last_reason {
@@ -51,7 +51,7 @@ li.last_reason {
 }
 
 .con .first_reason {
-    padding-top: 0;
+    padding-top: 1em;
 }
 
 /* CSS for the conclusion of the page */
@@ -71,10 +71,10 @@ section#conclusion p {
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 1729px) {
+@media only screen and (min-width: 500px) and (max-width: 1500px) {
     .pro {
         clear: both;
-        width: 100%
+        width: 100%;
     }
 
     .con {
