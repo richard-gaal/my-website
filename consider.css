@@ -74,7 +74,7 @@ section#conclusion p {
 }
 
 /* Clears the floating and makes sure that the website is still readable on smallers screens */
-@media only screen and (min-width: 500px) and (max-width: 1500px) {
+@media only screen  and (max-width: 1500px) {
     .pro {
         clear: both;
         width: 100%;

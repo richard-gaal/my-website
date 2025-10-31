@@ -3,6 +3,11 @@
     color:#4e4a4a;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 /* All of my type selectors */
 
 h1, h2, h3 {
@@ -24,44 +29,39 @@ main {
     margin: auto;
 }
 
-nav {
-    width: 80;
-}
 
 /* CSS for the navigation */
 
-#nav_menu {
-    margin: auto;
-    padding-bottom: 2em;
-    width: 100%;
-}
-#nav_menu ul {
-    list-style-type: none;
+nav {
+    margin: 0;
     padding: 0;
+    width: 100%;
+    background-color: #393838;
+    text-align: right; 
+    height: 70px; 
 }
 
-#nav_menu ul li {
-    float: left;
-    width: 33%;
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block; 
 }
 
-#nav_menu ul li a {
-    text-align: center;
+nav ul li {
+    display: inline-block;
+    margin: 0;
+}
+
+nav ul li a {
     display: block;
-    padding: 1em 0;
+    padding: 12px 18px; 
     text-decoration: none;
-    background-color: #9d9d9d;
     color: #ffffff;
     font-weight: bold;
-    border-right: 2px solid #ffffff;
-}
-
-#nav_menu ul li a.lastitem {
-    border-right: none;
-}
-
-#nav_menu ul li a:hover {
-    background-color:#4e4a4a;
+    font-size: 1.2em;
+    line-height: 40px; 
+    border: 2px solid transparent;
 }
 
 /* CSS for the image and caption at the top of the page!
@@ -151,23 +151,45 @@ footer>li {
 /* This media query fixes the navigation menu before it breaks. Doesn't actually come into play on my phone but defintely would on slightly smaller ones.
     Just makes the Nav bar vertical as opposed to horizontal */
 @media only screen and (max-width: 820px) {
-    #nav_menu {
-        padding-bottom: 0em;
+    nav {
+        height: auto; 
+        text-align: center; 
     }
-    #nav_menu ul li {
-        float: none;
+    
+    nav ul {
+        display: block; 
         width: 100%;
     }
-
-    #nav_menu ul li a {
-        border-right: none;
-        border-bottom: 2px solid #ffffff;
+    
+    nav ul li {
+        display: block; 
+        width: 100%;
+        margin: 0;
     }
-
-    #nav_menu ul li a.lastitem {
-        border-bottom: none;
+    
+    nav ul li a {
+        display: block;
+        width: 100%;
+        height: auto; 
+        padding: 15px 20px;
+        line-height: normal;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid #555; 
+    }
+    
+    nav ul li a:hover {
+        background-color: #4e4a4a; 
+        border: none;
+        border-bottom: 1px solid #555; 
+    }
+    
+    
+    nav ul li:last-child a {
+        border-bottom: none; 
     }
 }
+
 
 /* This media query fixes the formating of the text next to the picture in the header */
 @media only screen and (max-width: 985px) {
