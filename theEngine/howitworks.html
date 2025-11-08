@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Rotaries?</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="howitworks.css">
+</head>
+
+<body>
+    <div id="to_top"></div>
+    <nav>
+        <ul>
+            <li id="first_nav"><a href="../index.html">Home</a></li>
+            <li><a href="the_engine.html">The Engine</a>
+                <ul>
+                    <li><a href="howitworks.html">What's so special about rotaries?</a></li>
+                </ul>
+            </li>
+            <li><a href="../consider.html">Things to Consider</a></li>
+        </ul>
+    </nav>
+    <!--Header contains the header itself and the exploded diagram at the top of the page-->
+    <header>
+        <h1>Why a Rotary Engine?</h1>
+        <figure>
+            <img src="../images/rotary_exploded.png" alt="Exploded diagram of generic rotary engine" />
+            <figcaption>Exploded diagram of a rotary engine. <br> From:
+                TY - JOUR
+                AU - Ki, Dockjong
+                AU - Choi, Heeju
+                PY - 2017/08/01
+                SP - 71
+                EP - 78
+                T1 - Development of a Separate Type Rotary Engine
+                VL - 21
+                DO - 10.6108/KSPE.2017.21.4.071
+                JO - Journal of the Korean Society of Propulsion Engineers
+                ER - <br>
+                Source: https://www.researchgate.net/figure/Wankel-rotary-engine-core-components_fig3_324837538
+            </figcaption>
+        </figure>
+    </header>
+    <main>
+        <p>The rotary engine, while having its flaws, offers a driving experience like no other. This unique experience
+            stems from the different manner a rotary engine
+            goes about the combustion process. Both the standard piston engine and a rotary have four steps to
+            combustion, those being: </p>
+        <ul>
+            <li>Intake</li>
+            <li>Compression</li>
+            <li>Ignition</li>
+            <li>Exhaust</li>
+        </ul>
+        <p>
+            However, rather than having to turn linear motion into rotational motion like a piston engine, a rotary
+            engine rotates as its compression process. This leads to smoother acceleration, as the rotary engine doesn't have to deal with pistons 
+            constantly accelerating in different directions, and in turn leads to less shifting mass within the engine as the car accelerates. The combustion process
+            of a rotary engine is hard to convey with just words, so below is a comparsion between the rotary combustion process and the piston one.
+        </p> 
+        <!--Gifs comparing the rotary combusion process to the piston combustion process-->
+        <figure class="comparison" id="rot_gif">
+            <img src="/images/rotary_gif.gif" alt="Gif of the rotary engine combustion process">
+            <figcaption>GIF of the rotary combustion process<br>
+                Author: Y tambe Source: <a href="https://commons.wikimedia.org/wiki/File:Wankel_Cycle_anim_en.gif">https://commons.wikimedia.org/wiki/File:<br>Wankel_Cycle_anim_en.gif</a>
+            </figcaption>
+        </figure>
+        <figure class="comparison" id="pist_gif">
+            <img src="/images/four_stroke_gif.gif" alt="Gif of the piston engine combustion process">
+            <figcaption> *NOTE* The power stroke and the ignition phase are synonyms. <br>
+                GIF of the piston combustion process<br>
+                Shelton, Nicolas. "Four Stroke Engine" Boldmethod, 07/02/2024 <a href="https://www.boldmethod.com/learn-to-fly/systems/how-does-your-aircraft-piston-engine-work/">
+                    https://www.boldmethod.com/learn-to-fly/systems/how-does-your-aircraft-piston-engine-work/
+                </a>
+            </figcaption>
+        </figure>
+        <p id="post_comp">As seen above, the rotary engine's combustion process is is already rotational, meaning that there's less energy loss compared to converting
+            the linear motion of a piston into the rotational motion to spin the tires. If you pay attention to the edge of the rotor (the spinning triangle)
+            labeled A and the gear on the inside (representing the eccentric shaft) labeled B, you'll notice that B spins 3 times for every rotation A makes.
+        </p>
+        <p> This means that while each individual combustion is smaller, (the volume of each of the two combustion chamber in the 13B is 650 cubic centimeters) the increased
+            frequency of the combustions lead to the rotary engine having an incredibly linear power curve. In fact, one rotor has a power stroke twice as often as a cylinder
+            of a piston engine!
+
+        </p>
+    </main>
+    <footer>
+        <p>&copy; Richard Gaal 2025</p>
+        <li><a href="#to_top" class="references">Back to Top</a></li>
+    </footer>
+</body>
+
+</html>

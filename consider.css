@@ -10,7 +10,7 @@ section.clear {
 /* Type Selectors */
 h1, h2, h3 {
     text-align: center;
-    color:#000000;
+    color: var(--color-primary);
 }
 
 

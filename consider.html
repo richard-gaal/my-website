@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="consider.css">
 </head>
 <body>
+    <!--Link to the top of the page-->
+    <div id="to_top"></div>
     <!--Navigation bars at the top of the website -->
-    <nav id="nav_menu">
+    <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="howitworks.html">What's so special about rotaries?</a></li>
+            <li id="first_nav"><a href="index.html">Home</a></li>
+            <li><a href="theEngine/the_engine.html">The Engine</a>
+                <ul>
+                    <li><a href="theEngine/howitworks.html">What's so special about rotaries?</a></li>
+                </ul>
+            </li>
             <li><a href="consider.html">Things to Consider</a></li>
         </ul>
     </nav>
@@ -61,6 +67,7 @@
     </main>
     <footer>
         <p>&copy; Richard Gaal 2025</p>
+        <li><a href="#to_top" class="references">Back to Top</a></li>
     </footer>
 </body>
 </html>

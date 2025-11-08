@@ -1,0 +1,25 @@
+body {
+    width: 100%;
+}
+
+main {
+    width: 80%;
+}
+
+figure img {
+    width: 150%;
+}
+
+figcaption {
+    width: 150%;
+}
+
+figure#rear_left {
+    width: 50%;
+    float: left;
+}
+
+figure#ad_right {
+    width: 50%;
+    float: right;
+}
