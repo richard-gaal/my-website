@@ -1,16 +1,10 @@
-body {
-    width: 100%;
-}
+/* Barebones CSS because most of the styling comes from the main sheet */
 
-main {
-    width: 80%;
-}
-
-figure img {
+figure#rear_left img {
     width: 150%;
 }
 
-figcaption {
+figcaption#rear_left {
     width: 150%;
 }
 
@@ -19,7 +13,7 @@ figure#rear_left {
     float: left;
 }
 
-figure#ad_right {
+figure#pamph_right {
     width: 50%;
     float: right;
 }

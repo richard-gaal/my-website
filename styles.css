@@ -27,7 +27,7 @@ h1, h2, h3 {
 }
 
 p {
-    line-height: 1.5em;
+    line-height: 1.65em;
 }
 
 header {
@@ -83,21 +83,19 @@ nav ul ul {
     display: none;
     position: absolute;
     top: 100%;
-    left: 50%; /* Changed from left: 0 to right: 0 */
+    left: 50%; 
     transform: translateX(-50%);
     background-color: var(--color-primary);
     min-width: 250px;
     padding: 0;
     margin: 0;
-    z-index: 1000;
-    text-align: left; /* Keep dropdown text left-aligned */
 }
 
 nav ul ul li {
     float: none;
     width: 100%;
 }
-
+/* I'm going to be so honest getting this drop down to work the way it does is a result of looking up how to do it and mixing 5 different answers together */
 nav ul ul li a {
     display: block;
     padding: 12px 18px;
@@ -106,7 +104,7 @@ nav ul ul li a {
     font-weight: bold;
     font-size: 1.1em;
     border: none;
-    text-align: left;
+    text-align: center;
     line-height: normal;
     white-space: nowrap;
 }
@@ -128,7 +126,19 @@ nav > ul::after {
 
 nav a:hover {
     color:var(--color-accent);
+    background-color: rgba(255, 255, 255, 0.1);
 }
+
+header, main {
+    transition: margin-top 0.3s ease;
+}
+
+/* Apply margin when dropdown IS hovered */
+nav:hover:has(.dropdown:hover) ~ header,
+nav:hover:has(.dropdown:hover) ~ main {
+    margin-top: 90px;
+}
+
 
 
 
@@ -200,6 +210,7 @@ section#references ul {
 section#references li {
     line-height: 2em;
 }
+
 /* CSS for the footer */
 footer {
     clear: both;
