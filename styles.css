@@ -238,7 +238,8 @@ footer a {
 /* Responsive web design! */
 
 /* This media query fixes the navigation menu before it breaks. Doesn't actually come into play on my phone but defintely would on slightly smaller ones.
-    Just makes the Nav bar vertical as opposed to horizontal */
+    I need to adjust the menu so a) cleaner and b) more obvious that The Engine is also a page and not just a dropdown link */
+
 @media only screen and (max-width: 820px) {
     nav {
         height: auto; 
@@ -251,9 +252,14 @@ footer a {
     }
     
     nav ul li {
-        display: block; 
         width: 100%;
         margin: 0;
+    }
+
+    nav ul ul {
+        display: none;
+        position: static;
+        transform: none;
     }
     
     nav ul li a {
@@ -268,7 +274,6 @@ footer a {
     }
     
     nav ul li a:hover {
-        background-color: #4e4a4a; 
         border: none;
         border-bottom: 1px solid #555; 
     }
@@ -276,6 +281,10 @@ footer a {
     
     nav ul li:last-child a {
         border-bottom: none; 
+    }
+
+    nav a.dropdown {
+        margin-bottom: 0;
     }
 }
 
