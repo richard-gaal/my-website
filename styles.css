@@ -10,7 +10,7 @@
 
 /* All of my type selectors */
 
-body {
+body, html {
     padding: 0;
     margin: 0;
     background-color: var(--color-secondary);
@@ -243,7 +243,8 @@ footer a {
 @media only screen and (max-width: 820px) {
     nav {
         height: auto; 
-        text-align: center; 
+        text-align: center;
+        width: 100%; 
     }
     
     nav ul {
@@ -254,23 +255,30 @@ footer a {
     nav ul li {
         width: 100%;
         margin: 0;
+        padding: 0;
+        min-width: none;
     }
 
     nav ul ul {
         display: none;
         position: static;
         transform: none;
+        white-space: normal;
+        min-width: none;
     }
     
     nav ul li a {
-        display: block;
-        width: 100%;
+        width: 100% !important;
         height: auto; 
-        padding: 15px 20px;
+        padding: 15;
+        padding-right: 0;
+        padding-left: 0; 
+        margin: 0;
         line-height: normal;
         text-align: center;
         border: none;
-        border-bottom: 1px solid #555; 
+        border-bottom: 1px solid #555;
+        white-space: normal;
     }
     
     nav ul li a:hover {
