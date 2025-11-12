@@ -19,6 +19,11 @@ figure {
     max-width: 100%; 
 }
 
+h1~figure {
+    width: 70%;
+    margin: auto;
+}
+
 figure img {
     width: 100%;
     height: auto;
