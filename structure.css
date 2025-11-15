@@ -1,0 +1,148 @@
+ :root{
+    font-family: Arial, Helvetica, sans-serif;
+    --color-primary: #004225;
+    --color-secondary: #FAF3DD;
+    --color-accent: #CD7F32;
+    --color-dark: #1A1A1A;
+    color: var(--color-text);
+}
+
+/* Type selectors */
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+a {
+    color: #363457;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--color-primary);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+}
+
+p {
+    line-height: 1.65em;
+}
+
+/* Navigation CSS! */
+nav {
+    background-color: var(--color-primary);
+    padding: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    flex: 5;
+    max-width: 250px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+}
+
+nav ul li a:hover {
+    color: var(--color-accent);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid var(--color-accent);
+}
+
+header>h1 {
+    clear: both;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: dotted;
+}
+
+/* Dropdown styles */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary);
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li ul li {
+    flex: none;
+    width: 100%;
+    max-width: none;
+}
+
+nav ul li ul li a {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1em;
+}
+
+nav ul li ul li:last-child a {
+    border-bottom: none;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover > ul {
+    display: flex;
+}
+
+
+/* CSS for the footer */
+footer {
+    clear: both;
+    text-align: left;
+    width: 100%;
+    font-size: 0.75em;
+    border-top: solid 2px;
+    background-color: var(--color-primary); 
+}
+
+footer>p {
+    color: var(--color-secondary);
+    font-size: 1.35em;
+}
+
+footer>li {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+footer a {
+    color: var(--color-accent);
+}

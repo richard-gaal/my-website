@@ -1,26 +1,22 @@
- :root{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 /* CSS for type selectors! */
 
 h1 {
     text-align: center;
 }
 
-
-/* CSS for the navigation and footer have been linked via styles.css to ensure standardization */
+figcaption {
+    font-size: 0.9em;
+}
 
 /* CSS for the header */
 figure {
-    float: none;
     margin: 0 2em 0.5em 0; 
     text-align: center;
-    max-width: 100%; 
+    max-width: 75%; 
 }
 
 h1~figure {
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
 
@@ -49,13 +45,13 @@ main li {
 figure.comparison#rot_gif {
     padding-top: 0.5em;
     float: left;
-    width: 30%;
+    width: 35%;
 } 
 
 figure.comparison#pist_gif {
     padding-top: 0.5em;
     float: right;
-    width: 60%;
+    width: 55%;
 }
 
 p#post_comp {
@@ -66,14 +62,33 @@ p#post_comp {
 
 /* Media queries for responsive web design! */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 820px) {
     figure.comparison#rot_gif {
         float: none;
         width: 100%;
+        max-width: 100%;
+        margin: auto;
+
     }
 
     figure.comparison#pist_gif {
+        max-width: 100%;
         float: none;
         width: 100%;
+        margin: auto;
+    }
+
+    header figure {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    header figure img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    header figure figcaption {
+        font-size: 0.7em;
     }
 }

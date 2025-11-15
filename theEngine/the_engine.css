@@ -4,6 +4,10 @@ figure {
     max-width: 100%
 }
 
+figure figcaption {
+    text-align: center;
+}
+
 
 figure#rear_left {
     width: 40%;
@@ -15,10 +19,34 @@ figure#pamph_right {
     float: right;
 }
 
+figure#rear_left img {
+    width: 100%;
+}
 
-@media only screen and (max-width: 820px) {
+figure#pamph_right img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
     figure#rear_left, figure#pamph_right {
-        width: 100%;
+        display: block;
+        width: 80%;
         float: none;
+        margin: 0 auto; 
+    }
+
+    figure#pamph_right img, figure#rear_left img { 
+        display: block;
+        margin: auto;
+    }
+
+    figure#rear_left figcaption {
+        padding-bottom: 3em;
+        font-size: 0.8em;
+    }
+
+    figure#pamph_right figcaption {
+        padding-bottom: 1em;
+        font-size: 0.8em;
     }
 }
