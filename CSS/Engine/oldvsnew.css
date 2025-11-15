@@ -1,0 +1,41 @@
+/* The CSS for the flexbox for the images in the header */
+section#h_pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+figure {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+figcaption {
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+/* Media queries! */
+@media only screen  and (max-width: 915px) {
+    section#h_pictures {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure {
+        max-width: 100%;
+    }
+
+    figcaption {
+        font-size: 0.8em;
+    }
+}

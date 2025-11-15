@@ -8,7 +8,7 @@ figure figcaption {
     text-align: center;
 }
 
-
+/* I know I should make this a flex box eventually */
 figure#rear_left {
     width: 40%;
     float: left;
