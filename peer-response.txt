@@ -1,8 +1,14 @@
-1. The image showing the overall makeup of a rotary engine is REALLY big when the website is fully open on my screen, and only feels like an appropriate size when the media queries activate, maybe reduce the total image size and adjust the media queries to account for size adjustments if its needed.
+1. The image showing the overall makeup of a rotary engine is REALLY big when the website is fully open on my screen, and only feels like an appropriate size when the 
+    media queries activate, maybe reduce the total image size and adjust the media queries to account for size adjustments if its needed.
+
     1a. Adjusted the size of the header image within howitworks.html so it's a more reasonable size at all screen widths.
     
 2. I've noticed that your reference pages don't open in a new tab, and they open straight from your website window. Did you want to open those links into a new tab? Just clarifying. 
     2a. Added the target="_blank" to the reference links. I swore I did that but I must've done it on a computer where I didn't push it to GitHub. Lesson learned!
 
-3.I'm not sure if its just my computer but every time i click on "The Engine" link on your nav bar it opens the sub menu then closes before I can click on the next link and when I hover over it doesn't open so then I have to click it. I think its doing that because you have three different links. so the "The Engine" goes to a page and then you have the other two links under it, so its just opening the link over and over when I click on "The Engine" ... I think if you used flexbox for your nav menu you wouldn't have to use floats, it would make it look nicer and simplify your code and it should fix the hover issue I seem to be having.
+3.I'm not sure if its just my computer but every time i click on "The Engine" link on your nav bar it opens the sub menu then closes before I can click on the next link and when 
+    I hover over it doesn't open so then I have to click it. I think its doing that because you have three different links. so the "The Engine" goes to a page and then you have 
+    the other two links under it, so its just opening the link over and over when I click on "The Engine" ... I think if you used flexbox for your nav menu you wouldn't have to use 
+    floats, it would make it look nicer and simplify your code and it should fix the hover issue I seem to be having.
+    
     3a. I implemented my navigation bar as a flex box (as I should've anyways. Made it WAY simpler) but it didn't quite fix the issue. I only run into the issue on Android web browsers (Firefox seems to have hovering working properly and Samsung Internet doesn't have hovering working at all) and I'm not entirely sure how to resolve it since its not a viewport issue.

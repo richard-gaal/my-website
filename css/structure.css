@@ -121,6 +121,19 @@ nav ul li:hover > ul {
     display: flex;
 }
 
+nav ul li:focus > ul,
+nav ul li:focus-within > ul {
+    display: flex;
+}
+
+/* Improve touch targets */
+nav ul li a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* CSS for the footer */
 footer {
