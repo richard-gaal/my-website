@@ -39,6 +39,14 @@ p {
     line-height: 1.65em;
 }
 
+header>h1 {
+    clear: both;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: dotted;
+} 
+
 /* Navigation CSS! */
 nav {
     background-color: var(--color-primary);
@@ -79,13 +87,7 @@ nav ul li a:hover {
     border-bottom: 3px solid var(--color-accent);
 }
 
-header>h1 {
-    clear: both;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    border-bottom: dotted;
-}
+
 
 /* Dropdown styles */
 nav ul li ul {
@@ -121,18 +123,7 @@ nav ul li:hover > ul {
     display: flex;
 }
 
-nav ul li:focus > ul,
-nav ul li:focus-within > ul {
-    display: flex;
-}
 
-/* Improve touch targets */
-nav ul li a {
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 /* CSS for the footer */
