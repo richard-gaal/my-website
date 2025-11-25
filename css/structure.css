@@ -123,6 +123,26 @@ nav ul li:hover > ul {
     display: flex;
 }
 
+/* Hamburger for mobile */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.hamburger-line {
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-secondary);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
 
 
 
@@ -149,4 +169,46 @@ footer>li {
 
 footer a {
     color: var(--color-accent);
+}
+
+/* Responsive Web Design! */
+
+/* Media queries for changing the navigation menu */
+
+/* Mobile styles */
+@media (pointer: coarse) {
+    nav ul li a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        width: 100%;
+    }
+    
+    /* Dropdown as part of document flow */
+    nav ul li ul {
+        display: none;
+        position: relative;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+    
+    nav ul li:focus-within ul,
+    nav ul li:active ul {
+        display: block;
+    }
+    
+    /* Indent dropdown items */
+    nav ul li ul li a {
+        padding-left: 40px;
+    }
 }
