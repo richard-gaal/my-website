@@ -7,6 +7,10 @@ td {
     padding: 16px 16px;
 }
 
+h2 {
+  padding-top: 2em;
+}
+
 /* Turning the table into a mobile-friendly version.
     Credit goes to: https://www.geeksforgeeks.org/html
     /how-to-create-a-responsive-table-in-css/ for the responsive table */
