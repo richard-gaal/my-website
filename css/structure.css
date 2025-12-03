@@ -1,5 +1,5 @@
  :root{
-    font-family: "Inconsolata", monospace;
+    font-family: "Inconsolata", monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --color-primary: #004225;
     --color-secondary: #FAF3DD;
     --color-accent: #CD7F32;
@@ -185,5 +185,10 @@ footer a {
     
     nav ul li ul li a {
         padding-left: 40px;
+    }
+
+    p {
+        font-size: 1.1em;
+        font-weight: 450;
     }
 }

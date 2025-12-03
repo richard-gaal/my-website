@@ -91,4 +91,8 @@ p#post_comp {
     header figure figcaption {
         font-size: 0.7em;
     }
+    figure#rot_gif img {
+        max-width: 60vw;
+        margin: auto;
+    }
 }
